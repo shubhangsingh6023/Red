@@ -8,7 +8,7 @@ function ContactUsForm() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const SENDGRID_API_KEY = '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';
+  const SENDGRID_API_KEY = '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'; //api code
   const handleSubmit = () => {
     if (!name || !mobile || !email || !message) {
       Alert.alert('All fields are required');
@@ -27,14 +27,14 @@ function ContactUsForm() {
           {
             to: [
               {
-                email: 'centroid2022@gmail.com',
+                email: 'info@redpositive.in', //receiver mail id
               },
             ],
             subject: `New contact form submission from ${name}`,
           },
         ],
         from: {
-          email: 'pedalstriangle@gmail.com', 
+          email: 'pedalstriangle@gmail.com', //sender mail id
         },
         content: [
           {
