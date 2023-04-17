@@ -15,6 +15,7 @@ npm install
 ## Installation
 For iOS,
 ```sh
+cd ios
 pod install
 ```
 Now, run it on Xcode or Android Studio emulator
