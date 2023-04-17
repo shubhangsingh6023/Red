@@ -9,7 +9,6 @@ function ContactUsForm() {
   const [message, setMessage] = useState('');
 
   const SENDGRID_API_KEY = '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';
-
   const handleSubmit = () => {
     if (!name || !mobile || !email || !message) {
       Alert.alert('All fields are required');
